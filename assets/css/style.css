@@ -69,6 +69,8 @@ main {
     background-size: cover;
     background-position: center;
 }
+
+/* "Cool subtitle here!" caption box */
 main h3 {
     color: var(--c-primary);
     background-color: var(--c-secondary);
@@ -112,4 +114,25 @@ footer h2 {
     text-align: left;
     margin-left: 5%;
     margin-bottom: 0;
+}
+
+.contact-list {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Display items horizontally using flex*/
+    display: flex;
+}
+
+.contact-list li {
+    margin-right: 15px;
+    color: var(--c-primary);
+    font-size: 1.5rem;
 }
