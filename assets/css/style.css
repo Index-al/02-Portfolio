@@ -8,14 +8,32 @@
   body {
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-size: 16px;
   }
   
+  /* Only used for "Indexal" at top */
   h1 {
     font-size: 6rem;
   }
+
+/* Used for "About Me", "Work", etc */
+  h2 {
+    font-size: 4rem;
+    color: var(--c-primary);
+  }
+
+  /* Page breaker element */
+.page-breaker {
+    background-color: var(--c-primary);
+    height: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
   
   header {
-    width: 100%;
     text-align: center;
     background-color: var(--c-primary);
     color: var(--c-primary);
@@ -23,24 +41,29 @@
 
   header h1 {
     background: var(--c-secondary);
+    margin: 0px;
+    padding: 0px;
   }
   
   nav {
     font-size: 2rem;
+    padding: 12px;
+    margin-bottom: 0px;
   }
   
   nav a {
     color: var(--c-secondary);
-    text-decoration: underline solid var(--c-secondary) 7px;
-    text-decoration-color: var(--c-secondary);
+    text-decoration: underline solid var(--c-secondary) 5px;
+    text-decoration-skip-ink: none;
     padding: 14px;
     text-align: center;
   }
   
-/* This is the main banner image on the homepage */
+/* Main banner image */
 main {
-    height: 200px;
+    height: 300px;
     width: 100%;
+    margin-top: 0px;
     margin-bottom: 25px;
     background-image: url("/assets/images/blue-bg.jpg");
     background-size: cover;
@@ -49,15 +72,44 @@ main {
 main h3 {
     color: var(--c-primary);
     background-color: var(--c-secondary);
-    font-size: 1.5rem;
-    text-align: end;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    position: absolute;
+    right: 50px;
+    top: 380px;
+    padding: 10px;
 }
-  
-  footer {
+
+.about {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.about p {
+    padding: 15px;
+    margin: 2% 3%;
+}
+
+/* "About Me" */
+.about h2 {
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+/* "Work" */
+.work h2 {
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+footer {
     width: 100%;
-    bottom: 0;
-    padding: 20px;
     text-align: center;
-    background: var(--c-primary);
-    margin-bottom: 0p;
-  }  
+}
+
+/* "Contact Me" */
+footer h2 {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
