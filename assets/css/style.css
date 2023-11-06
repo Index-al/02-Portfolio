@@ -1,0 +1,63 @@
+:root {
+    /* Place to make some custom variables */
+    --c-primary: rgb(54, 54, 94);
+    --c-secondary: rgb(187, 222, 255);
+  }
+  
+  /* Set the background color */
+  body {
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  header {
+    width: 100%;
+    text-align: center;
+    background-color: var(--c-primary);
+    color: var(--c-primary);
+  }
+
+  header h1 {
+    background: var(--c-secondary);
+  }
+  
+  nav {
+    font-size: 2rem;
+  }
+  
+  nav a {
+    color: var(--c-secondary);
+    text-decoration: underline solid var(--c-secondary) 7px;
+    text-decoration-color: var(--c-secondary);
+    padding: 14px;
+    text-align: center;
+  }
+  
+/* This is the main banner image on the homepage */
+main {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("/assets/images/blue-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+main h3 {
+    color: var(--c-primary);
+    background-color: var(--c-secondary);
+    font-size: 1.5rem;
+    text-align: end;
+}
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: var(--c-primary);
+    margin-bottom: 0p;
+  }  
