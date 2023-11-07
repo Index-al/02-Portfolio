@@ -163,7 +163,7 @@ main h3 { /* "Cool subtitle here!" caption box */
     position: absolute;
     left: 0px;
     bottom: 50px;
-    padding: 30px 20px 60px 50px;
+    padding: 30px 30px 60px 50px;
     z-index: 2; /* Place header on top of pseudo-element */
   }
 
@@ -173,7 +173,7 @@ main h3 { /* "Cool subtitle here!" caption box */
     position: absolute;
     left: 0px;
     bottom: 50px;
-    margin: 0 0 25px -50px;
+    margin: 0 0 25px 30px;
     z-index: 2; /* Place header on top of pseudo-element */
 }
 
