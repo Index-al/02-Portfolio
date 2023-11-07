@@ -70,7 +70,7 @@ main {
     width: 100%;
     margin-top: 0px;
     margin-bottom: 25px;
-    background-image: url("/assets/images/blue-bg.jpg");
+    background-image: url("../images/blue-bg.jpg");
     background-size: cover;
     background-position: center;
     position: relative; /* Set the position to relative */
