@@ -46,42 +46,48 @@ header h1 {
 }
 
 nav {
-    font-size: 2rem;
-    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    padding: 12px 0 40px 0;
     margin-bottom: 0px;
 }
 
 nav a {
     color: var(--c-secondary);
-    text-decoration: underline solid var(--c-secondary) 5px;
-    text-decoration-skip-ink: none;
     padding: 14px;
-    text-align: center;
+    text-decoration: underline solid var(--c-secondary) 9px;
+    text-underline-offset: 25px;
 }
   
 /* Main banner image */
 main {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
+    height: 400px;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 25px;
     background-image: url("/assets/images/blue-bg.jpg");
     background-size: cover;
     background-position: center;
+    position: relative; /* Set the position to relative */
 }
 
-main h3 { /* "Cool subtitle here!" caption box */
+main h3 { /* Cool subtitle here! caption box */
     color: var(--c-primary);
     background-color: var(--c-secondary);
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     font-weight: bolder;
     position: absolute;
-    right: 50px;
-    top: 380px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
     padding: 10px;
 }
+
 
 /* "About" Section */
 .about {
