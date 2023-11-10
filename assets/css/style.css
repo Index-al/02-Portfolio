@@ -285,14 +285,14 @@ footer .contact a {
 @media screen and (min-width: 1440px) {
     header {
         display: flex;
-        justify-content: space-between; /* Adjust alignment */
+        justify-content: space-between;
         align-items: center;
         padding: 15px 15px;
     }
 
     header h1 {
         font-size: 4rem;
-        margin-left: -15px; /* Add margin for spacing */
+        margin-left: -15px;
         padding-left: 10%;
     }
 
@@ -320,15 +320,24 @@ footer .contact a {
     }
 
     .about, .work, footer {
-        width: 100%; /* Full width for the content */
-        padding-left: 20px; /* Add left padding for spacing */
-        box-sizing: border-box; /* Include padding in width */
+        width: 80%;
+        box-sizing: border-box;
     }
 
-    .about h2, .work h2, footer h2 {
-        text-align: left;
-        margin-bottom: 10px; /* Add bottom margin for spacing */
+    .about h2, .work h2 {
+        margin-bottom: 10px;
+        margin-left: -20%; /* Adjusted margin-left */
+        margin-top: 0px;
+        font-size: 3rem;
     }
+    
+    footer h2 {
+        margin-bottom: 10px;
+        margin-left: -27%; /* Adjusted margin-left */
+        font-size: 2.5rem;
+        margin-top: -5px;
+    }
+    
 
     .about p {
         margin: 0; /* Remove default margin */
@@ -337,6 +346,7 @@ footer .contact a {
 
     .work .hero-card, .work .card-container {
         width: 80%;
+        max-width: 1500px;
     }
 
     .work .hero-card header {
@@ -352,8 +362,10 @@ footer .contact a {
     }
 
     .work .card {
-        width: 45%;
+        width: 44%;
         margin-bottom: 20px;
+        min-height: 0px;
+        min-width: 0px;
     }
 
     .contact ul {
@@ -362,6 +374,11 @@ footer .contact a {
         flex-direction: row;
         justify-content: space-evenly;
         gap: 20px;
+    }
+
+    /* Make footer text smaller */
+    footer .contact {
+        padding: 0px;
     }
 
     footer .contact a {
@@ -373,6 +390,12 @@ footer .contact a {
     /* Vertical line breaks between headers and content */
     .about, .work, footer {
         border-left: 2px solid var(--c-primary);
-        margin-bottom: 20px; /* Add bottom margin for spacing */
+        margin-bottom: 20px;
+        margin-left: 20%;
+        margin-right: 20%; /* Adjusted margin-right */
+    }
+    
+    .page-breaker {
+        display: none;
     }
 }
