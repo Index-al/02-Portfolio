@@ -162,9 +162,11 @@ main h3 { /* Cool subtitle here! caption box */
     border-width: 10px;
     border-color: var(--c-secondary);
     overflow: hidden; /* Add overflow to contain pseudo-element */
+    min-width: 430px;
+    min-height: 290px;
 }
 
-.card::before, .hero-card:before {
+.card::before, .hero-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -188,7 +190,7 @@ footer h2 { /* "Contact Me" */
     margin-bottom: 0;
 }
 
-footer .contact .footer-list {
+footer .contact {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -197,18 +199,18 @@ footer .contact .footer-list {
 }
 
 /* Remove bullet points from list items */
-footer .contact .footer-list ul {
+footer .contact ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 /* Add margin between list items */
-footer .contact .footer-list li {
+footer .contact li {
     margin-top: 50px;
 }
 
-footer .contact .footer-list a {
+footer .contact a {
     font-size: 3rem;
     font-weight: bold;
     color: black;
@@ -216,8 +218,70 @@ footer .contact .footer-list a {
     text-underline-offset: 14px;
 }
 
+/* Media Query for Tablets (786px or larger) */
 @media screen and (min-width: 786px) {
-    header {
-        background-color: pink;
+    /* INDEXAL HEADER */
+    h1 {
+        font-size: 5rem;
     }
+
+    /* NAV */
+    nav {
+        font-size: 1.5rem;
+        text-decoration: underline solid var(--c-secondary) 5px;
+        text-underline-offset: 10px;
+        padding: 0px 0px 10px 0;
+    }
+    
+    nav a {
+        text-decoration: none;
+    }
+
+    /* CARDS */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card {
+        width: 40%;
+        margin: 15px;
+        height: 200px; /* Set a fixed height */
+        overflow: hidden;
+    }
+    .card img {
+        object-fit: cover; /* Maintain aspect ratio and cover the container */
+        height: 100%;
+        width: 100%;
+    }
+    .card header {
+        font-size: 2rem;
+    }
+    .card p {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .hero-card p {
+        font-weight: normal;
+    }
+
+    /* FOOTER */
+    .contact ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        gap: 20px;
+    }
+    .contact a {
+        font-size: 2rem;
+        text-decoration: underline solid var(--c-primary) 5px;
+        text-underline-offset: 10px;
+    }
+}
+
+/* Media Query for Tablets (1440px or larger) */
+@media screen and (min-width: 1440px) {
+    
 }
