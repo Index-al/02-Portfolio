@@ -175,6 +175,11 @@ main h3 { /* Cool subtitle here! caption box */
     bottom: 0;
     background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
     z-index: 1;
+    transition: opacity 0.3s ease; /* Fade in pseudo-element when hovering over card */
+}
+
+.card:hover::before, .hero-card:hover::before {
+    opacity: 0;
 }
   
 .card img, .hero-card img {
