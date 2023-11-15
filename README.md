@@ -10,6 +10,7 @@ Welcome to Indexal's Portfolio – a showcase of projects and information about 
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
 - [License](#license)
+- [Preview](#preview)
 
 ## Introduction
 

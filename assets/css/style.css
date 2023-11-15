@@ -76,6 +76,20 @@ main {
     position: relative; /* Set the position to relative */
 }
 
+/* Avatar image */
+main img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: var(--c-secondary);
+}
+
 main h3 { /* Cool subtitle here! caption box */
     color: var(--c-primary);
     background-color: var(--c-secondary);
@@ -316,6 +330,21 @@ footer .contact a {
         flex-direction: column; /* Stack items vertically */
         width: 100%;
     }
+
+    /* Avatar image */
+    main img {
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 6px;
+        border-color: var(--c-secondary);
+    }
+
     main h3 { /* Cool subtitle here! caption box */
         font-size: 2.5rem;
         position: absolute;
