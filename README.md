@@ -47,6 +47,8 @@ Contributions are welcome! If you have suggestions, improvements, or would like 
 
 This project is licensed under the [MIT License](LICENSE).
 
----
+## Preview
 
-Happy exploring! 🚀
+Below is a preview of the deployed site. Thank you for taking the time to check out my project!
+
+![preview](./assets/images/portfolio-preview.png)
